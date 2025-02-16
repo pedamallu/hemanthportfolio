@@ -23,7 +23,7 @@ const greeting = {
   username: "Hemanth Pedamallu",
   title: "Hi, I'm Hemanth",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Typescript/ Reactjs / Spring/ Nodejs / Flutter and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with Reactjs / Spring / Flask / Flutter and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1OiOTIO5Os3KuOxHthl-k3_TgC4-GWjbk/view?usp=sharing", // Set to empty to hide the button
@@ -36,22 +36,22 @@ const socialMediaLinks = {
   github: "https://github.com/pedamallu",
   linkedin: "https://www.linkedin.com/in/hemanth-pedamallu/",
   gmail: "hemanthtpg@gmail.com",
-  medium: "https://medium.com/@saadpasta",
+  medium: "https://medium.com/@hemanthtpg",
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE NEW TECH",
+  title: "Skills",
+  subTitle: "SOFTWARE DEVELOPER WHO WANTS TO EXPLORE NEW TECH",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design APIs using Spring Boot and Flask for seamless data interaction with third-party services like Okta for identity and access management, Spring Security ."
     ),
-    emoji("⚡ Write full-fledged APIs "),
+    emoji("⚡ Develop dynamic and user-friendly web interfaces with React. "),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ Auth 0/ AWS"
+      "⚡ Create mobile applications with Flutter, supporting offline data collection and synchronization."
     )
   ],
 
@@ -59,6 +59,18 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Spring",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -96,10 +108,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     }
@@ -114,22 +122,26 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Universityof Florida",
-      logo: require("./assets/images/ufLogo.png"),
+      logo: require("./assets/images/ufLogo.jpeg"),
       subHeader: "Master of Science in Computer Science",
       duration: "January 2023 - December 2024",
-      desc: "Par.",
+      //desc: "Working as a Graduate Student Assistant at the UF Blueberry Laboratories.",
+      desc: "GPA: 3.77/4.0",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Relevant Coursework: Analysis of Algorithms, Advanced Data Structures, Database Management System, Computer Networks, Software Engineering, Distributed Operating System Principles, Agile Project Management."
       ]
     },
     {
       schoolName: "Bennett University",
-      logo: require("./assets/images/buLogo.webp"),
+      logo: require("./assets/images/buLogo.gif"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "July 2018 - May 2022",
-      desc: "Ranked top 10% in the program. Took courses about DSA, Software Engineering, Computer Networks, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      //desc: "Ranked top 10% in the program. ",
+      desc: "GPA: 3.66/4.0",
+      descBullets: [
+        "Collaborated with university IT team to build a virtual security network in Cisco Packet Tracer.",
+        "Led and excelled in multiple hackathons and coding competitions, showcasing strong problem-solving and teamwork."
+      ]
     }
   ]
 };
@@ -141,15 +153,15 @@ const techStack = {
   experience: [
     {
       Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -163,27 +175,34 @@ const workExperiences = {
     {
       role: "Full Stack Developer",
       company: "University of Florida",
-      companylogo: require("./assets/images/ufLogo.png"),
-      date: "January 2023 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      companylogo: require("./assets/images/ufLogo.jpeg"),
+      date: "Septemcer 2023 – December 2024",
+      desc: "Developed a comprehensive web and mobile application to allow users to map, acquire, and process photos.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "103k+ photos taken during season (2024/02~05) from different fields containing plant metadata.",
+        "4 seconds average time for transmitting, processing and storing each photo in the database.",
+        "Interface allows user to visualize results after transmission."
       ]
     },
     {
-      role: "Full Stack Developer",
+      role: "Software Engineer",
       company: "Capgemini",
       companylogo: require("./assets/images/capgeminiLogo.png"),
       date: "February 2022 – December 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Implemented and updated actual company application modules, by optimizing the database queries thus resulting in at least 4x faster data retrieval."
+      ]
     },
     {
       role: "Trainee Software Engineer",
       company: "Mirra Healthcare",
-      companylogo: require("./assets/images/mirraLogo.jpeg"),
+      companylogo: require("./assets/images/mirraLogo.jpg"),
       date: "August 2021 – February 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Developed a prototype of health insurance claim application, a clone of company product in ASP. NET MVC architecture with Microsoft SQL server.",
+      descBullets: [
+        "Implemented and updated actual company application modules, by optimizing the database queries thus resulting in at least 4x faster data retrieval."
+      ]
     }
   ]
 };
@@ -203,26 +222,95 @@ const bigProjects = {
   subtitle: "SOME PROJECTS THAT I HAVE COMPLETED",
   projects: [
     {
-      image: require("./assets/images/BBP.webp"),
-      projectName: "Disease and Wax Estimation",
+      image: require("./assets/images/BBPWebsite.png"),
+      projectName: "BlueYield: Collaborative Farm Data Platform",
       projectDesc:
-        "A Flutter application for real-time detection of disease area on leaves and wax on blueberry ",
+        "Developed a React-based application with a Flask REST API and complex SQL relations to support breeders, researchers, and logistics teams in managing blueberry farm data in real time. Enabled photo-based crop evaluation, automated blueberry counting, and CSV export for traditional analysis, streamlining data collection and decision-making.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://www.blueberrybreeding.com/"
+          name: "Product Poster (PDF)",
+          url: "https://drive.google.com/file/d/18i2bUZuyPoT420AXiWYqw6qEHYSXSaDf/view?usp=sharing"
         }
+
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/spamCall.webp"),
-      projectName: "VOIP Spam Call Detection",
-      projectDesc: "Detect the spam calls from the SIP responses",
+      image: require("./assets/images/GrowthChamber UI.png"),
+      projectName: "Growth Chamber Control & Monitoring System",
+      projectDesc:
+        "Developed a Qt (C++) desktop application for remote control and real-time monitoring of automated growth chambers via UDP communication. Integrated with a Raspberry Pi for sensor data acquisition, actuator control, and remote access, enabling researchers to optimize environmental conditions for accelerated blueberry breeding.",
       footerLink: [
         {
-          name: "See Publication",
+          name: "Photos & Details (PDF)",
+          url: "https://drive.google.com/file/d/1TZpC4Vx4XL0HBy4hzpaPGSqysBmHIxEO/view?usp=sharing"
+        }
+
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/airline_analysis.jpeg"),
+      projectName: "Airline Trend Analysis",
+      projectDesc:
+        "Analyze 19 years of US airline delays! This project explores how factors like COVID-19, weather, and customer satisfaction affect delays using extensive public datasets and perform complex SQL trend queries. It features an interactive web app for visualizing trends and make informed decisions.",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/pedamallu/airline_analysis"
+        },
+        {
+          name: "Database Docs",
+          url: "https://docs.google.com/document/d/11Syho2vVjgy0tHLVi8-0XyH38O8o0VRF/edit?usp=sharing&ouid=114860688189319378331&rtpof=true&sd=true"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Conveyor Device.jpg"),
+      projectName: "Ground Truth Data Generation",
+      projectDesc:
+        "Developed a conveyor system for precise dataset generation in agricultural machine learning. Built a real-time berry detection and classification module using computer vision to track maturity levels based on color and size. Designed an on-screen Qt application interface to control the device and monitor the data collection process.",
+      footerLink: [
+        {
+          name: "Lab website",
           url: "https://ieeexplore.ieee.org/document/9788233"
+        },
+        {
+          name: "Photos & Details (PDF)",
+          url: "https://drive.google.com/file/d/1sxp7-OULBGgXhulu7D95joP_nkpKjOZ1/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/VOIPDetection.png"),
+      projectName: "VOIP Spam Call Detection",
+      projectDesc:
+        "Detect spam calls from the SIP responses with reduction in detection time using HPC libraries.",
+      footerLink: [
+        {
+          name: "IEEE Publication",
+          url: "https://ieeexplore.ieee.org/document/9788233"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/pedamallu/Accelerated-and-Refined-VoIP-Spam-Call-Detection-using-HPC"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/IDS results.png"),
+      projectName:
+        "Intrusion Detection System using Nature-inspired Metaheuristic algorithms",
+      projectDesc:
+        "Developed an Intrusion Detection System (IDS) leveraging nature-inspired metaheuristic algorithms to enhance cybersecurity threat detection. Applied optimization techniques to efficiently classify network intrusions, improving detection accuracy and reducing false positives. Implemented using Python, machine learning models, and feature selection techniques for real-time network security monitoring.",
+      footerLink: [
+        {
+          name: "Research Paper",
+          url: "https://docs.google.com/document/d/1lROP7AevkUfstw2A8_mNFkcUXUylY0quSsDql6-iVd8/edit?usp=sharing"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/pedamallu/Intrusion-Detection-System-using-Nature-inspired-Metaheuristic-algorithms"
         }
       ]
     }
@@ -236,7 +324,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Certifications, Award Letters and Other Stuff that I have done !",
 
   achievementsCards: [
     {
@@ -268,8 +356,7 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  subtitle: "Some of My Learnings & Journey in Software Development.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [],
   display: true // Set false to hide this section, defaults to true
@@ -304,7 +391,6 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
   display: true // Set false to hide this section, defaults to true
 };
 
