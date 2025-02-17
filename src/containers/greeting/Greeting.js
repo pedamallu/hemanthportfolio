@@ -6,7 +6,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {illustration, greeting, about} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -20,13 +20,13 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1
+              <h3
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
-              </h1>
+                {/* <span className="wave-emoji">{emoji("👋")}</span> */}
+              </h3>
               <p
                 className={
                   isDark
@@ -36,6 +36,10 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
+
+              {/* <div className="education-card-container">
+                <p style={{textAlign: "justify"}}>{about.description}</p>
+              </div> */}
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
@@ -57,8 +61,8 @@ export default function Greeting() {
             ) : ( */}
             <img
               alt="headshot-photo"
-              src={require("../../assets/images/LinkedIn headshot.jpg")}
-              
+              src={require("../../assets/images/LinkedIn Headshot.jpeg")}
+              className="profile-photo"
             ></img>
             {/* )} */}
           </div>

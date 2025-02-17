@@ -23,7 +23,8 @@ const greeting = {
   username: "Hemanth Pedamallu",
   title: "Hi, I'm Hemanth",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with Reactjs / Spring / Flask / Flutter and some other cool libraries and frameworks."
+    //"a results-driven software engineer with a Master’s from the University of Florida 🎓 and a strong track record in developing and deploying scalable applications 🚀. I’ve transformed complex challenges into high-performance solutions—such as developing a web application that streamlined geo-located gene data processing and cut manual work by 10 hours per week ⏱️, and optimizing microservices at Capgemini to boost responsiveness and reliability ⚡."
+    "a Software Engineer"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1OiOTIO5Os3KuOxHthl-k3_TgC4-GWjbk/view?usp=sharing", // Set to empty to hide the button
@@ -31,15 +32,19 @@ const greeting = {
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
-  github: "https://github.com/pedamallu",
   linkedin: "https://www.linkedin.com/in/hemanth-pedamallu/",
+  leetcode: "https://leetcode.com/u/HemanthPedamallu/",
+  github: "https://github.com/pedamallu",
   gmail: "hemanthtpg@gmail.com",
   medium: "https://medium.com/@hemanthtpg",
   display: true // Set true to display this section, defaults to false
 };
-
+//About Section
+const about = {
+  description:
+    "I’m a results-driven software engineer with a Master’s from the University of Florida 🎓 and hands-on experience in developing and deploying scalable applications 🚀. I transform complex challenges into scalable, high-performance solutions—like migrating a 100K-record system that cut data processing by 10 hours weekly ⏱️, and optimizing microservices for enhanced responsiveness ⚡. My expertise in Java, Python, and modern web frameworks fuels my passion for writing clean, efficient code that drives measurable business impact."
+};
 // Skills Section
 
 const skillsSection = {
@@ -60,16 +65,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "java",
+      skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Go",
+      fontAwesomeClassname: "fab fa-golang"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
       skillName: "Spring",
       fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "NodeJS",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "npm",
+      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "html-5",
@@ -80,36 +101,32 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "flutter",
+      fontAwesomeClassname: "fab fa-flutter"
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
       skillName: "firestore",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -176,12 +193,14 @@ const workExperiences = {
       role: "Full Stack Developer",
       company: "University of Florida",
       companylogo: require("./assets/images/ufLogo.jpeg"),
-      date: "Septemcer 2023 – December 2024",
-      desc: "Developed a comprehensive web and mobile application to allow users to map, acquire, and process photos.",
+      date: "September 2023 – December 2024",
+      //desc: "Developed a comprehensive web and mobile application to allow users to map, acquire, and process photos.",
       descBullets: [
-        "103k+ photos taken during season (2024/02~05) from different fields containing plant metadata.",
-        "4 seconds average time for transmitting, processing and storing each photo in the database.",
-        "Interface allows user to visualize results after transmission."
+        "Launched a React web app with Spring microservices for core APIs and a Flask API for ML functions to analyze geo-located gene data; replaced CSV workflows, saving 10 hrs/week.",
+        "Designed and hosted a PostgreSQL database on Amazon Aurora for 100K+ plant records, using indexing and optimized joins for better performance.",
+        "Engineered a Flutter app for offline data collection, syncing with Firestore and PostgreSQL; achieved 4 sec/photo processing.",
+        "Deployed the application on a Linux server with containerization to optimize resource usage.",
+        "Built a Qt (C++) app for a Raspberry Pi 5-based fruit quality device using WiringPi for sensor communication."
       ]
     },
     {
@@ -189,9 +208,15 @@ const workExperiences = {
       company: "Capgemini",
       companylogo: require("./assets/images/capgeminiLogo.png"),
       date: "February 2022 – December 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Implemented and updated actual company application modules, by optimizing the database queries thus resulting in at least 4x faster data retrieval."
+        "Developed a Token Bucket–based rate limiter used across 15+ microservices.",
+        "Integrated OAuth 2.0 with PKCE to enable Single Sign-On for the application.",
+        "Implemented 10+ features in Spring Boot, optimizing SQL queries for high traffic and responsiveness.",
+        "Enhanced front-end user interface with React.js, improving client-side experiences to create end-user-centric solutions.",
+        "Tested features using 50 plus JUnit/Mockito test-cases and analyzed the application for improvements with SonarQube.",
+        "Deployed on Amazon ECS with AWS Fargate for zero downtime and fault tolerance.",
+        "Utilized Agile methodologies to manage tasks and sprints, fostering effective cross-functional collaboration."
       ]
     },
     {
@@ -225,10 +250,10 @@ const bigProjects = {
       image: require("./assets/images/BBPWebsite.png"),
       projectName: "BlueYield: Collaborative Farm Data Platform",
       projectDesc:
-        "Developed a React-based application with a Flask REST API and complex SQL relations to support breeders, researchers, and logistics teams in managing blueberry farm data in real time. Enabled photo-based crop evaluation, automated blueberry counting, and CSV export for traditional analysis, streamlining data collection and decision-making.",
+        "Developed a React-based application with a Flask REST API and complex SQL relations, integrating a Flutter application for offline data collection, to support breeders, researchers, and logistics teams in managing blueberry farm data in real time. Enabled photo-based crop evaluation, automated blueberry counting, and CSV export for traditional analysis.",
       footerLink: [
         {
-          name: "Product Poster (PDF)",
+          name: "Photos & Details (PDF)",
           url: "https://drive.google.com/file/d/18i2bUZuyPoT420AXiWYqw6qEHYSXSaDf/view?usp=sharing"
         }
 
@@ -260,7 +285,7 @@ const bigProjects = {
           url: "https://github.com/pedamallu/airline_analysis"
         },
         {
-          name: "Database Docs",
+          name: "Database Document (PDF)",
           url: "https://docs.google.com/document/d/11Syho2vVjgy0tHLVi8-0XyH38O8o0VRF/edit?usp=sharing&ouid=114860688189319378331&rtpof=true&sd=true"
         }
       ]
@@ -272,12 +297,12 @@ const bigProjects = {
         "Developed a conveyor system for precise dataset generation in agricultural machine learning. Built a real-time berry detection and classification module using computer vision to track maturity levels based on color and size. Designed an on-screen Qt application interface to control the device and monitor the data collection process.",
       footerLink: [
         {
-          name: "Lab website",
-          url: "https://ieeexplore.ieee.org/document/9788233"
-        },
-        {
           name: "Photos & Details (PDF)",
           url: "https://drive.google.com/file/d/1sxp7-OULBGgXhulu7D95joP_nkpKjOZ1/view?usp=sharing"
+        },
+        {
+          name: "Lab website",
+          url: "https://ieeexplore.ieee.org/document/9788233"
         }
       ]
     },
@@ -288,12 +313,12 @@ const bigProjects = {
         "Detect spam calls from the SIP responses with reduction in detection time using HPC libraries.",
       footerLink: [
         {
-          name: "IEEE Publication",
-          url: "https://ieeexplore.ieee.org/document/9788233"
-        },
-        {
           name: "Github",
           url: "https://github.com/pedamallu/Accelerated-and-Refined-VoIP-Spam-Call-Detection-using-HPC"
+        },
+        {
+          name: "IEEE Publication",
+          url: "https://ieeexplore.ieee.org/document/9788233"
         }
       ]
     },
@@ -305,12 +330,12 @@ const bigProjects = {
         "Developed an Intrusion Detection System (IDS) leveraging nature-inspired metaheuristic algorithms to enhance cybersecurity threat detection. Applied optimization techniques to efficiently classify network intrusions, improving detection accuracy and reducing false positives. Implemented using Python, machine learning models, and feature selection techniques for real-time network security monitoring.",
       footerLink: [
         {
-          name: "Research Paper",
-          url: "https://docs.google.com/document/d/1lROP7AevkUfstw2A8_mNFkcUXUylY0quSsDql6-iVd8/edit?usp=sharing"
-        },
-        {
           name: "Github",
           url: "https://github.com/pedamallu/Intrusion-Detection-System-using-Nature-inspired-Metaheuristic-algorithms"
+        },
+        {
+          name: "Research Paper ",
+          url: "https://drive.google.com/file/d/1FKYtQXYMZcYSrEvEztSBen6JgjnW9KxF/view?usp=sharing"
         }
       ]
     }
@@ -398,7 +423,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Have any open position, discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 3529997201",
+  number: "+1 352-999-7201",
   email_address: "hemanthtpg@gmail.com"
 };
 
@@ -415,6 +440,7 @@ export {
   illustration,
   greeting,
   socialMediaLinks,
+  about,
   splashScreen,
   skillsSection,
   educationInfo,
