@@ -334,7 +334,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/IDS results.png"),
-      projectName: "IDS using Nature-inspired Metaheuristic algorithms",
+      projectName: "IDS using Nature-Inspired Metaheuristic algorithms",
       projectDesc:
         "Developed an Intrusion Detection System (IDS) leveraging nature-inspired metaheuristic algorithms to enhance cybersecurity threat detection. Applied optimization techniques to efficiently classify network intrusions, improving detection accuracy and reducing false positives. Implemented using Python, machine learning models, and feature selection techniques for real-time network security monitoring.",
       footerLink: [
@@ -343,7 +343,7 @@ const bigProjects = {
           url: "https://github.com/pedamallu/Intrusion-Detection-System-using-Nature-inspired-Metaheuristic-algorithms"
         },
         {
-          name: "Research Paper ",
+          name: "Research Paper",
           url: "https://drive.google.com/file/d/1FKYtQXYMZcYSrEvEztSBen6JgjnW9KxF/view?usp=sharing"
         }
       ]
