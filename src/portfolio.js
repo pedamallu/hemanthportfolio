@@ -398,7 +398,7 @@ const blogSection = {
       image: "",
       title: "Numerical Algorithms: System of Linear Equations",
       description:
-        "This article provides a concise overview of numerical algorithms for solving systems of linear equations, discussing various methods—including direct, iterative, and distributed approaches..."
+        "This article provides a concise overview of numerical algorithms for solving systems of linear equations, discussing various methods—including direct, iterative, distributed approaches ..."
     }
   ],
   display: true // Set false to hide this section, defaults to true
