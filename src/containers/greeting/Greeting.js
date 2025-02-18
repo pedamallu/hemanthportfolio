@@ -1,12 +1,13 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
+//import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// import landingPerson from "../../assets/lottie/landingPerson";
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting, about} from "../../portfolio";
+//import {illustration, greeting, about} from "../../portfolio";
+import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -43,15 +44,19 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
+                {/* {greeting.resumeLink && ( */}
+                {/* <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"
                     className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
+                  > */}
+                <Button
+                  text="See my resume"
+                  href={greeting.resumeLink}
+                  newTab={true}
+                />
+                {/* </a> */}
+                {/* )} */}
               </div>
             </div>
           </div>
@@ -60,7 +65,7 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : ( */}
             <img
-              alt="headshot-photo"
+              alt="headshot"
               src={require("../../assets/images/LinkedIn Headshot.jpeg")}
               className="profile-photo"
             ></img>

@@ -81,8 +81,9 @@ function Header() {
           {viewResume && (
             <li>
               <a
-                href="https://drive.google.com/file/d/1OiOTIO5Os3KuOxHthl-k3_TgC4-GWjbk/view?usp=sharing"
+                href={greeting.resumeLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Resume
               </a>

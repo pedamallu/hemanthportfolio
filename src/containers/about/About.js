@@ -8,7 +8,12 @@ export default function About() {
     <div className="about-section" id="education">
       <h1 className="about-heading">About Me</h1>
       <div className="education-card-container">
-        <p style={{textAlign: "justify"}}>{about.description}</p>
+        {/* <p style={{textAlign: "justify"}}>{about.description}</p> */}
+        {about.description.split("\n\n").map((para, index) => (
+          <p key={index} style={{textAlign: "justify"}}>
+            {para}
+          </p>
+        ))}
       </div>
     </div>
   );

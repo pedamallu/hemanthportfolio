@@ -62,6 +62,7 @@ export default function StartupProject() {
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
+                      style={{textAlign: "justify", padding: "0 1rem"}}
                     >
                       {project.projectDesc}
                     </p>

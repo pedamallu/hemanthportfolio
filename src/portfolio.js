@@ -27,7 +27,7 @@ const greeting = {
     "a Software Engineer"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1OiOTIO5Os3KuOxHthl-k3_TgC4-GWjbk/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1fe_xbJ6x3iNROW1_lfUK6sLK6-R4qwa9/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,8 +42,13 @@ const socialMediaLinks = {
 };
 //About Section
 const about = {
-  description:
-    "I’m a results-driven software engineer with a Master’s from the University of Florida 🎓 and hands-on experience in developing and deploying scalable applications 🚀. I transform complex challenges into scalable, high-performance solutions—like migrating a 100K-record system that cut data processing by 10 hours weekly ⏱️, and optimizing microservices for enhanced responsiveness ⚡. My expertise in Java, Python, and modern web frameworks fuels my passion for writing clean, efficient code that drives measurable business impact."
+  description: `I'm a results-driven software engineer with a Master’s from the University of Florida 🎓 and extensive hands-on experience in developing and deploying scalable applications 🚀. I excel at transforming complex challenges into high-performance solutions—like migrating a 100K-record system that slashed data processing time by 10 hours weekly ⏱️, while also optimizing microservices to boost responsiveness ⚡.
+\n
+Beyond my academic and professional milestones, I have actively participated in several coding contests and hackathons 💻🏆, where I sharpened my problem-solving skills and collaborated with talented peers from around the globe 🌍. These competitions not only fueled my passion for clean, efficient code but also reinforced my belief in the power of teamwork and continuous learning 🔄.
+\n
+My technical toolkit spans Java, Python, JavaScript, and modern web frameworks 🛠️, allowing me to build robust applications that deliver measurable business impact 📈. Whether it's tackling a challenging algorithm in a contest or streamlining critical business tools in a corporate setting, I bring creativity, dedication, and a relentless drive for excellence to every project 💪.
+\n
+I'm interested in full-time Software Engineer roles—feel free to connect with me via email at hemanthtpg(at)gmail(dot)com.`
 };
 // Skills Section
 
@@ -145,7 +150,7 @@ const educationInfo = {
       //desc: "Working as a Graduate Student Assistant at the UF Blueberry Laboratories.",
       desc: "GPA: 3.77/4.0",
       descBullets: [
-        "Relevant Coursework: Analysis of Algorithms, Advanced Data Structures, Database Management System, Computer Networks, Software Engineering, Distributed Operating System Principles, Agile Project Management."
+        //"Relevant Coursework: Analysis of Algorithms, Advanced Data Structures, Database Management System, Computer Networks, Software Engineering, Distributed Operating System Principles, Agile Project Management."
       ]
     },
     {
@@ -156,8 +161,8 @@ const educationInfo = {
       //desc: "Ranked top 10% in the program. ",
       desc: "GPA: 3.66/4.0",
       descBullets: [
-        "Collaborated with university IT team to build a virtual security network in Cisco Packet Tracer.",
-        "Led and excelled in multiple hackathons and coding competitions, showcasing strong problem-solving and teamwork."
+        //"Collaborated with university IT team to build a virtual security network in Cisco Packet Tracer.",
+        //"Led and excelled in multiple hackathons and coding competitions, showcasing strong problem-solving and teamwork."
       ]
     }
   ]
@@ -220,12 +225,13 @@ const workExperiences = {
       ]
     },
     {
-      role: "Trainee Software Engineer",
+      role: "Software Engineer Intern",
       company: "Mirra Healthcare",
       companylogo: require("./assets/images/mirraLogo.jpg"),
       date: "August 2021 – February 2022",
-      desc: "Developed a prototype of health insurance claim application, a clone of company product in ASP. NET MVC architecture with Microsoft SQL server.",
+      //desc: "Developed a prototype of health insurance claim application, a clone of company product in ASP. NET MVC architecture with Microsoft SQL server.",
       descBullets: [
+        "Developed a prototype of health insurance claim application, a clone of company product in ASP. NET MVC architecture with Microsoft SQL server.",
         "Implemented and updated actual company application modules, by optimizing the database queries thus resulting in at least 4x faster data retrieval."
       ]
     }
@@ -252,6 +258,10 @@ const bigProjects = {
       projectDesc:
         "Developed a React-based application with a Flask REST API and complex SQL relations, integrating a Flutter application for offline data collection, to support breeders, researchers, and logistics teams in managing blueberry farm data in real time. Enabled photo-based crop evaluation, automated blueberry counting, and CSV export for traditional analysis.",
       footerLink: [
+        {
+          name: "View Product",
+          url: "https://fruitphenomics.ifas.ufl.edu/"
+        },
         {
           name: "Photos & Details (PDF)",
           url: "https://drive.google.com/file/d/18i2bUZuyPoT420AXiWYqw6qEHYSXSaDf/view?usp=sharing"
@@ -310,7 +320,7 @@ const bigProjects = {
       image: require("./assets/images/VOIPDetection.png"),
       projectName: "VOIP Spam Call Detection",
       projectDesc:
-        "Detect spam calls from the SIP responses with reduction in detection time using HPC libraries.",
+        "Developed a spam call detection system by extracting 10,000+ SIP responses from PCAP files using Wireshark, reducing manual processing time by 50%. Leveraged Random Forest and Neural Networks to achieve 95% detection accuracy, with results visualized in Tableau. Detailed methodology and outcomes are documented in my IEEE research paper.",
       footerLink: [
         {
           name: "Github",
@@ -324,8 +334,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/IDS results.png"),
-      projectName:
-        "Intrusion Detection System using Nature-inspired Metaheuristic algorithms",
+      projectName: "IDS using Nature-inspired Metaheuristic algorithms",
       projectDesc:
         "Developed an Intrusion Detection System (IDS) leveraging nature-inspired metaheuristic algorithms to enhance cybersecurity threat detection. Applied optimization techniques to efficiently classify network intrusions, improving detection accuracy and reducing false positives. Implemented using Python, machine learning models, and feature selection techniques for real-time network security monitoring.",
       footerLink: [
@@ -380,10 +389,18 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Articles & Blogs",
   subtitle: "Some of My Learnings & Journey in Software Development.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [],
+  blogs: [
+    {
+      url: "https://drive.google.com/file/d/1bKwWhd4hXQ5TGeOI4wt0P3bxP5FlMTXi/view?usp=sharing",
+      image: "",
+      title: "Numerical Algorithms: System of Linear Equations",
+      description:
+        "This article provides a concise overview of numerical algorithms for solving systems of linear equations, discussing various methods—including direct, iterative, and distributed approaches..."
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
